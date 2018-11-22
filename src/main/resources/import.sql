@@ -122,4 +122,3 @@ insert into hotel(id, city_id, name, address, zip) values (26, 20, 'Marriot Down
 insert into city(id, country, name, state, map) values (21, 'USA', 'Washington', 'DC', '38.895112, -77.036366');
 insert into hotel(id, city_id, name, address, zip) values (27, 21, 'Hotel Rouge', '1315 16th Street NW', '20036');
 
---commit;
