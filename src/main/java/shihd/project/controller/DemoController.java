@@ -3,8 +3,7 @@ package shihd.project.controller;
 import shihd.project.domain.City;
 import shihd.project.domain.Hotel;
 import shihd.project.domain.Quote;
-import shihd.project.repository.CityMapper;
-import shihd.project.service.HotelRepository;
+import shihd.project.persistence.CityMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,10 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-public class HttpTestCtrl {
-
-    @Autowired
-    private HotelRepository hotelRepository;
+public class DemoController {
 
     @Autowired
     private CityMapper cityMapper;
@@ -28,11 +24,6 @@ public class HttpTestCtrl {
         Quote quote = restTemplate.getForObject(
                 "http://gturnquist-quoters.cfapps.io/api/random", Quote.class);
         return quote;
-    }
-
-    @GetMapping("/query")
-    public Iterable<Hotel> query() {
-        return hotelRepository.findAll();
     }
 
     @GetMapping("/mapper")

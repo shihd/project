@@ -1,4 +1,4 @@
-package shihd.project.repository;
+package shihd.project.persistence;
 
 import shihd.project.domain.City;
 import org.apache.ibatis.annotations.Mapper;

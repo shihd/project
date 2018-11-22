@@ -1,4 +1,4 @@
-package shihd.project.repository;
+package shihd.project.persistence;
 
 import java.util.Map;
 
