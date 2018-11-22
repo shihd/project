@@ -13,7 +13,7 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import shihd.project.service.impl.UserBean;
-import shihd.project.service.impl.UserService;
+import shihd.project.service.UserService;
 import shihd.project.util.JWTUtil;
 
 import java.util.Arrays;
@@ -25,6 +25,7 @@ public class MyRealm extends AuthorizingRealm {
 
     private static final Logger LOGGER = LogManager.getLogger(MyRealm.class);
 
+    @Autowired
     private UserService userService;
 
     @Autowired

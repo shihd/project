@@ -1,11 +1,12 @@
 package shihd.project.service.impl;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+import shihd.project.service.UserService;
 
 import java.util.Map;
 
-@Component
-public class UserService {
+@Service
+public class UserServiceImpl implements UserService {
 
     public UserBean getUser(String username) {
         // 没有此用户直接返回null

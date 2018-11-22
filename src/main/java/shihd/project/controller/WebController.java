@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import shihd.project.bean.ResponseBean;
 import shihd.project.exception.UnauthorizedException;
 import shihd.project.service.impl.UserBean;
-import shihd.project.service.impl.UserService;
+import shihd.project.service.UserService;
 import shihd.project.util.JWTUtil;
 
 @RestController
@@ -22,6 +22,7 @@ public class WebController {
 
     private static final Logger LOGGER = LogManager.getLogger(WebController.class);
 
+    @Autowired
     private UserService userService;
 
     @Autowired
