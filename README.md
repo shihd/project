@@ -1,2 +1,2 @@
 # project
-spring-boot+mybatis
+spring boot + mybatis + shiro + JWT + Restful
